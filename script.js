@@ -11,3 +11,9 @@ async function getUser(username) {
     console.log(err);
   }
 }
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const user = e.target.val;
+});
