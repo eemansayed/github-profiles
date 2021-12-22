@@ -13,6 +13,13 @@ async function getUser(username) {
   }
 }
 
+function createUserCard(user) {
+  const cardHTML = `
+
+
+  `;
+}
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
