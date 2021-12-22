@@ -16,5 +16,11 @@ async function getUser(username) {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const user = e.target.val;
+  const user = search.value;
+
+  if (user) {
+    getUser(user);
+
+    search.value = "";
+  }
 });
