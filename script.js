@@ -10,7 +10,9 @@ async function getUser(username) {
 
     createUserCard(data);
   } catch (err) {
-    console.log(err);
+    if (err.response.status == 404) {
+      createErrorCard("No profile with this username");
+    }
   }
 }
 
